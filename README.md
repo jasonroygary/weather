@@ -3,4 +3,4 @@ This is a small microservice that is intended to intercept a payload from Acurit
 
 It requires the included Weather.nsf Domino database placed on a Domino Server. The settings in datasources.json will have to be modified based on your configuration.
 
-It is based on Loopback3 with a custom Domino datasource. Bob.
+It is based on Loopback3 with a custom Domino datasource.
