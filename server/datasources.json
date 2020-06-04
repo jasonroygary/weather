@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+    "myDominoDs": {
+    "name": "myDominoDs",
+    "connector": "domino",
+    "serverURL": "http://10.0.1.91",
+    "userName": "api",
+    "password": "password",
+    "database": "weather.nsf",
+    "view": "weatherData",
+    "form": "Weather"
+  }  
+}

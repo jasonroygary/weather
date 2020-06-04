@@ -1,0 +1,147 @@
+{
+  "name": "Weather",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dateUTC": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "sensor": {
+      "type": "string"
+    },
+    "sensorBattery": {
+      "type": "string"
+    },
+    "rssi": {
+      "type": "string"
+    },
+    "hubBattery": {
+      "type": "string"
+    },
+    "pressureInHg": {
+      "type": "string"
+    },
+    "pressurehPa": {
+      "type": "string"
+    },
+    "UVIndex": {
+      "type": "string"
+    },
+    "lightIntensity": {
+      "type": "string"
+    },
+    "windGustMph": {
+      "type": "string"
+    },
+    "windGustDirectionDegrees": {
+      "type": "string"
+    },
+    "windGustDirectionCompass": {
+      "type": "string"
+    },
+    "windSpeedAverageMph": {
+      "type": "string"
+    },
+    "windSpeedAverageKph": {
+      "type": "string"
+    },
+    "measuredLightSec": {
+      "type": "string"
+    },
+    "measuredLightHours": {
+      "type": "string"
+    },
+    "strikeCount": {
+      "type": "string"
+    },
+    "interference": {
+      "type": "string"
+    },
+    "lastStrikeTime": {
+      "type": "string"
+    },
+    "lastStrikeDistanceMiles": {
+      "type": "string"
+    },
+    "humidity": {
+      "type": "string"
+    },
+    "windSpeedMph": {
+      "type": "string"
+    },
+    "windDirDegrees": {
+      "type": "string"
+    },
+    "windDirCompass": {
+      "type": "string"
+    },
+    "heatIndexF": {
+      "type": "string"
+    },
+    "heatIndexC": {
+      "type": "string"
+    },
+    "feelsLikeF": {
+      "type": "string"
+    },
+    "feelsLikeC": {
+      "type": "string"
+    },
+    "dewPointF": {
+      "type": "string"
+    },
+    "dewPointC": {
+      "type": "string"
+    },
+    "dailyRainIn": {
+      "type": "string"
+    },
+    "rainIn": {
+      "type": "string"
+    },
+    "windChill": {
+      "type": "string"
+    },
+    "tempF": {
+      "type": "string"
+    },
+    "tempC": {
+      "type": "string"
+    },
+    "dateNDLocal": {
+      "type": "string"
+    },
+    "lastStrikeDistanceKM": {
+      "type": "string"  
+    },
+    "windSpeedKph": {
+      "type": "string"  
+    },
+    "windGustKph": {
+      "type": "string"  
+    },
+    "dailyRainCm": {
+      "type": "string"  
+    },
+    "windGustKph": {
+      "type": "string"  
+    },
+    "windGustKph": {
+      "type": "string"  
+    },
+    "queryString": {
+      "type": "string"  
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
