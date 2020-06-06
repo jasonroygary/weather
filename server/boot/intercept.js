@@ -4,8 +4,7 @@ HANDLING THIS OUTSIDE OF LOOPBACK MODEL PROVISIONING DUE TO ODD TLS
 CONFIGURATION NEED (1.1)
 */
 module.exports = function(app) {
-var weather = app.models.Weather;	
-console.log('intercept');
+var weather = app.models.Weather;
 const express = require('express')
 const https = require('https')
 const eApp = express()
@@ -13,8 +12,6 @@ const url = require('url');
 var bodyParser = require("body-parser");
 const fs = require('fs');
 var tools = require('../helper');
-var timeStamp = new Date();
-
 eApp.use(bodyParser.urlencoded({ extended: true }));
 eApp.use(bodyParser.json());
 eApp.use(bodyParser.text());
@@ -24,6 +21,8 @@ eApp.all('/*',function (req,res){
     console.log('connected');
     res.writeHead(200);
     const queryObject = url.parse(req.url,true).query;
+    var timeStamp = new Date(queryObject.dateutc + 'Z');
+
     var weatherDoc = {
         dateUTC: queryObject.dateutc,
         id: queryObject.id,
